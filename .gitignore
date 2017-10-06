@@ -7,6 +7,8 @@
 
 # dependencies
 /node_modules
+!/node_modules/bootstrap/dist/css/spacelab-bootstrap.min.css
+!/node_modules/bootstrap/dist/css/spacelab-bootstrap.css
 
 # IDEs and editors
 /.idea

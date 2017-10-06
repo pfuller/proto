@@ -3,24 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
+import { AppRouterModule } from './app-router/app-router.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      { path: 'welcome', component: WelcomeComponent },
-      { path: '', redirectTo: 'welcome', pathMatch: 'full'},
-      { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
-    ]),
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
