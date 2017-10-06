@@ -6,9 +6,7 @@
 /out-tsc
 
 # dependencies
-/node_modules
-!/node_modules/bootstrap/dist/css/spacelab-bootstrap.min.css
-!/node_modules/bootstrap/dist/css/spacelab-bootstrap.css
+/node_modules/*
 
 # IDEs and editors
 /.idea
